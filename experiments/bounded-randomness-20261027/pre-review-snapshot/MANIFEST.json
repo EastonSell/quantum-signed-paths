@@ -1,0 +1,22 @@
+{
+  "PROTOCOL.md": "b6281851e3d2f9a5d3fc21ff3a3cf8f6f7cb73e33a4571ea73e6d8f58627dbbd",
+  "README.md": "d81abd18c9092670c9ff05024265303f2fba3586efed58bcde46e5dbadda7e41",
+  "SOURCES.md": "2d16be93f0b0cc93dd7e0f4151532f3e01671085c181d3117e8d290368345133",
+  "THEORY.md": "e5cddce3892a7cb990e58592c3eef5117c66f353563382f163a2ca8e11a66068",
+  "base_quantum.py": "bc4da1931e416c893d0c6b17c6bdf84088c8deba30539a8e45b132a721f07e5c",
+  "bounded.py": "a0bc9a83a231c62ee6e7f5d3de4bddaa81fb3fa9d960e5607a91ee8aa23cce5f",
+  "evaluate.py": "f20adffb93fc397591ce4ae0fad49190f2079b8a517e732ac9242cf6e2966756",
+  "protocol.sha256": "bdedab0cdd6474f17558420c825fe5f3725d2137bc5e53174d628339c7455559",
+  "results/evaluation/failures.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "results/evaluation/rows.jsonl": "54dcb0e7deb551409ed669439262e93e33fda352a377cc34e6413f20604ed94f",
+  "results/evaluation/summary.json": "4d79e2b5131f35813f62287420b5142bf99636e3497bc8fa432431e839bcae4e",
+  "results/final-tests.txt": "711c0bf747f18ecd6ed79578b49975ec790f8274bc74d10eec8b6f2a1259f6c0",
+  "results/inherited-tests.txt": "488968b8ef202639f1873058d7030759748af91a96027589c0ae2b71254a6338",
+  "results/rerun/failures.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "results/rerun/rows.jsonl": "54dcb0e7deb551409ed669439262e93e33fda352a377cc34e6413f20604ed94f",
+  "results/rerun/summary.json": "7217e7f6cf2627cf09739363c830f4c65c9645c7a8930ac8fa509e2b5ac48d33",
+  "results/rerun.log": "7217e7f6cf2627cf09739363c830f4c65c9645c7a8930ac8fa509e2b5ac48d33",
+  "results/tdd-green.txt": "711c0bf747f18ecd6ed79578b49975ec790f8274bc74d10eec8b6f2a1259f6c0",
+  "results/tdd-red.txt": "8f13b33c4c9b6fc9001e9108d279d0fcd363c98c4b336fd17a5df2958302bbd1",
+  "test_bounded.py": "5795de7228e9f3a231d2720c11aca13de8b6851cde69257fc0a52ae6e6f0fed3"
+}

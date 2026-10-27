@@ -1,0 +1,10 @@
+# Independent-review response (post-hoc, 2026-10-27)
+The original frozen protocol, all original evaluation/rerun files, and original tests remain as evidence. Pre-review versions of changed source/docs and the original manifest are preserved in `pre-review-snapshot/`. No new test is described as preregistered.
+
+Independent review found that gate iterators were consumed by validation, causing silent incorrect behavior in bit_sample and invalid-rank failure in rank_sample. Both public entry points now materialize input bits and gates once, including gate tuples, before validation/counting. This accepts finite iterables; infinite iterables are outside the finite-circuit contract. Input copies increase auxiliary storage as documented in THEORY.md.
+
+Review also found non-exact floating oracle outputs raised AttributeError rather than a deliberate validation error. The callback now must return numbers.Rational (excluding bool), converted to Fraction before arithmetic. Float, complex, string, None and bool are rejected with ValueError. Exact integers remain accepted. This validates local type/integer/range invariants only; correctness still requires a faithful exact probability oracle. A locally consistent but false oracle can yield false outputs.
+
+The original single example did not exhaustively check the bit-source wrapper. Added post-hoc tests feed every h-bit string for each of the original 720 cases (3,548 bit strings), compare the wrapper with rank_sample and count exactly h source invocations. Original rank-sampler dense-baseline verification remains separate. Added iterator regressions and invalid-oracle-type regressions.
+
+Before the fix, 13 tests ran: 2 failures and 5 errors, retained in results/review-regression-red.txt. After the fix, 13/13 pass in results/review-regression-green.txt. The full unchanged 720-case/3,548-rank grid was rerun into results/post-review-evaluation; its rows match original results byte for byte. Original protocol hash still verifies. Pending re-review; no publication.

@@ -1,0 +1,9 @@
+# Frozen bounded-randomness audit, 2026-10-27
+Private independent follow-on. Do not modify or publish held identity-padding work.
+Question: implement the existing THEORY.md fixed-h-bit sampler claim with a worst-case bit budget, not a faster counting algorithm.
+Before implementation/evaluation freeze this file by SHA256. Local freeze is not externally timestamped preregistration.
+Algorithm: rank r uniformly in [0,2^h), descend integer prefix masses; one left-prefix probability oracle call per output wire; no rejection, no fresh randomness while descending.
+Primary evaluation: all length 0..3 words over H0,H1,H2,T012, all 8 basis inputs, all 2^h ranks. Independently obtain dense exact probabilities, perform flat inverse-CDF rank lookup, and compare every rank and all output histogram counts. Retain per-case full rank lists, denominators, logical oracle calls and failures.
+Secondary evaluation: 40 circuits generated with random.Random(20261027), n=randint(1,4), G=randint(0,6), basis bits randrange(2); each gate H with random()<0.6 or n<3, else controls/target random.sample(range(n),3). Evaluate every rank, identical endpoints. No selection/tuning.
+Unit cases: empty register, HH zero-probability branches, deterministic identity, invalid ranks, wrong oracle denominator/range, exact h calls to a supplied fair-bit function; invalid fair bit. Run inherited suite separately unchanged.
+Acceptance: zero exact mismatches, every rank covered, every histogram equals dense masses, exactly n probability queries per rank, all tests passing. No timing superiority endpoint; existing conditional rejection sampler comparison is analytic and explicitly not a speed benchmark. Any failure retained, protocol unchanged. Standard library only; no installations, paid compute, remote writes or publication.

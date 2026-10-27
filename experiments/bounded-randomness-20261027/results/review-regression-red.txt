@@ -1,0 +1,106 @@
+test_all_bitstrings_frozen_cases (test_bounded.ReviewRegressionTests.test_all_bitstrings_frozen_cases) ... ok
+test_bit_gate_iterator (test_bounded.ReviewRegressionTests.test_bit_gate_iterator) ... FAIL
+test_integer_oracle (test_bounded.ReviewRegressionTests.test_integer_oracle) ... ok
+test_rank_gate_iterator (test_bounded.ReviewRegressionTests.test_rank_gate_iterator) ... ERROR
+test_reject_nonexact_oracles (test_bounded.ReviewRegressionTests.test_reject_nonexact_oracles) ... 
+  test_reject_nonexact_oracles (test_bounded.ReviewRegressionTests.test_reject_nonexact_oracles) (value=0.5) ... ERROR
+  test_reject_nonexact_oracles (test_bounded.ReviewRegressionTests.test_reject_nonexact_oracles) (value=True) ... FAIL
+  test_reject_nonexact_oracles (test_bounded.ReviewRegressionTests.test_reject_nonexact_oracles) (value='0') ... ERROR
+  test_reject_nonexact_oracles (test_bounded.ReviewRegressionTests.test_reject_nonexact_oracles) (value=None) ... ERROR
+  test_reject_nonexact_oracles (test_bounded.ReviewRegressionTests.test_reject_nonexact_oracles) (value=0j) ... ERROR
+test_bad_bit (test_bounded.Tests.test_bad_bit) ... ok
+test_bad_oracle (test_bounded.Tests.test_bad_oracle) ... ok
+test_bad_rank (test_bounded.Tests.test_bad_rank) ... ok
+test_empty (test_bounded.Tests.test_empty) ... ok
+test_fair_bits (test_bounded.Tests.test_fair_bits) ... ok
+test_feature_present (test_bounded.Tests.test_feature_present) ... ok
+test_hh (test_bounded.Tests.test_hh) ... ok
+test_identity (test_bounded.Tests.test_identity) ... ok
+
+======================================================================
+ERROR: test_rank_gate_iterator (test_bounded.ReviewRegressionTests.test_rank_gate_iterator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-bounded-randomness-20261027/test_bounded.py", line 34, in test_rank_gate_iterator
+    self.assertEqual(b.rank_sample((0,),iter([('H',0)]),1),((1,),1))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/fb1c54ed82f9/quantum-bounded-randomness-20261027/bounded.py", line 8, in rank_sample
+    raise ValueError('rank must be an integer in [0, 2^h)')
+ValueError: rank must be an integer in [0, 2^h)
+
+======================================================================
+ERROR: test_reject_nonexact_oracles (test_bounded.ReviewRegressionTests.test_reject_nonexact_oracles) (value=0.5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-bounded-randomness-20261027/test_bounded.py", line 44, in test_reject_nonexact_oracles
+    b.rank_sample((0,),[],0,lambda *args:value)
+  File "/workspace/scratch/fb1c54ed82f9/quantum-bounded-randomness-20261027/bounded.py", line 12, in rank_sample
+    if left.denominator!=1 or not 0<=left<=mass:
+       ^^^^^^^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'denominator'
+
+======================================================================
+ERROR: test_reject_nonexact_oracles (test_bounded.ReviewRegressionTests.test_reject_nonexact_oracles) (value='0')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-bounded-randomness-20261027/test_bounded.py", line 44, in test_reject_nonexact_oracles
+    b.rank_sample((0,),[],0,lambda *args:value)
+  File "/workspace/scratch/fb1c54ed82f9/quantum-bounded-randomness-20261027/bounded.py", line 12, in rank_sample
+    if left.denominator!=1 or not 0<=left<=mass:
+       ^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'denominator'
+
+======================================================================
+ERROR: test_reject_nonexact_oracles (test_bounded.ReviewRegressionTests.test_reject_nonexact_oracles) (value=None)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-bounded-randomness-20261027/test_bounded.py", line 44, in test_reject_nonexact_oracles
+    b.rank_sample((0,),[],0,lambda *args:value)
+  File "/workspace/scratch/fb1c54ed82f9/quantum-bounded-randomness-20261027/bounded.py", line 11, in rank_sample
+    left=oracle(x,gates,prefix+(0,))*total; calls+=1
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+TypeError: unsupported operand type(s) for *: 'NoneType' and 'int'
+
+======================================================================
+ERROR: test_reject_nonexact_oracles (test_bounded.ReviewRegressionTests.test_reject_nonexact_oracles) (value=0j)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-bounded-randomness-20261027/test_bounded.py", line 44, in test_reject_nonexact_oracles
+    b.rank_sample((0,),[],0,lambda *args:value)
+  File "/workspace/scratch/fb1c54ed82f9/quantum-bounded-randomness-20261027/bounded.py", line 12, in rank_sample
+    if left.denominator!=1 or not 0<=left<=mass:
+       ^^^^^^^^^^^^^^^^
+AttributeError: 'complex' object has no attribute 'denominator'
+
+======================================================================
+FAIL: test_bit_gate_iterator (test_bounded.ReviewRegressionTests.test_bit_gate_iterator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-bounded-randomness-20261027/test_bounded.py", line 38, in test_bit_gate_iterator
+    self.assertEqual(b.bit_sample((0,),iter([('H',0)]),bit),((1,),1))
+AssertionError: Tuples differ: ((0,), 1) != ((1,), 1)
+
+First differing element 0:
+(0,)
+(1,)
+
+- ((0,), 1)
+?   ^
+
++ ((1,), 1)
+?   ^
+
+
+======================================================================
+FAIL: test_reject_nonexact_oracles (test_bounded.ReviewRegressionTests.test_reject_nonexact_oracles) (value=True)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-bounded-randomness-20261027/test_bounded.py", line 43, in test_reject_nonexact_oracles
+    with self.assertRaises(ValueError):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.516s
+
+FAILED (failures=2, errors=5)

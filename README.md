@@ -56,3 +56,24 @@ local preparation; this integration publishes it after review. Protocol freezing
 was local and is not externally timestamped preregistration. Original root
 protocol, code and evidence are retained unchanged; run the follow-on from its
 own directory to use its appended `cone` implementation.
+
+## Reviewed bounded-randomness sampler (2026-10-27)
+
+[Implementation, proof and exact evidence](experiments/bounded-randomness-20261027/README.md)
+implement integer prefix-tree inverse-CDF sampling: exactly h independent fair
+bits and n faithful exact prefix-probability queries for a basis-input H/Toffoli
+circuit with h Hadamards and n wires. The default oracle remains exponential;
+this is neither a faster simulator nor an implementation or validation of the
+external counting theorem.
+
+All 720 cases and 3,548 ranks match the exact dense baseline, with 10,338 logical
+prefix calls and zero failures. All 13 current and 11 inherited tests pass.
+Independent re-review accepted iterator/oracle-validation fixes; original code,
+failures, protocol and pre-correction documentation remain preserved.
+
+The linked directory preserves the exact 37-file staged snapshot with its
+36-entry manifest. Its “not published” and “authorization pending” statements
+record preparation history. The user subsequently explicitly approved public
+publication of this bounded-randomness sampler, separately from identity-padding
+research. No held identity-padding files or commit are included. Protocol hashing
+was local, not independently timestamped preregistration.

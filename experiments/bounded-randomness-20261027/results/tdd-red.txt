@@ -1,0 +1,84 @@
+test_bad_bit (test_bounded.Tests.test_bad_bit) ... ERROR
+test_bad_oracle (test_bounded.Tests.test_bad_oracle) ... ERROR
+test_bad_rank (test_bounded.Tests.test_bad_rank) ... ERROR
+test_empty (test_bounded.Tests.test_empty) ... ERROR
+test_fair_bits (test_bounded.Tests.test_fair_bits) ... ERROR
+test_feature_present (test_bounded.Tests.test_feature_present) ... FAIL
+test_hh (test_bounded.Tests.test_hh) ... ERROR
+test_identity (test_bounded.Tests.test_identity) ... ERROR
+
+======================================================================
+ERROR: test_bad_bit (test_bounded.Tests.test_bad_bit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-bounded-randomness-20261027/test_bounded.py", line 30, in test_bad_bit
+    with self.assertRaises(ValueError): b.bit_sample((0,),[('H',0)],lambda:2)
+                                        ^^^^^^^^^^^^
+AttributeError: module 'bounded' has no attribute 'bit_sample'
+
+======================================================================
+ERROR: test_bad_oracle (test_bounded.Tests.test_bad_oracle)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-bounded-randomness-20261027/test_bounded.py", line 22, in test_bad_oracle
+    with self.assertRaises(ValueError): b.rank_sample((0,),[],0,lambda *a:p)
+                                        ^^^^^^^^^^^^^
+AttributeError: module 'bounded' has no attribute 'rank_sample'
+
+======================================================================
+ERROR: test_bad_rank (test_bounded.Tests.test_bad_rank)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-bounded-randomness-20261027/test_bounded.py", line 19, in test_bad_rank
+    with self.assertRaises(ValueError): b.rank_sample((0,),[],r)
+                                        ^^^^^^^^^^^^^
+AttributeError: module 'bounded' has no attribute 'rank_sample'
+
+======================================================================
+ERROR: test_empty (test_bounded.Tests.test_empty)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-bounded-randomness-20261027/test_bounded.py", line 11, in test_empty
+    self.assertEqual(b.rank_sample((),[],0),((),0))
+                     ^^^^^^^^^^^^^
+AttributeError: module 'bounded' has no attribute 'rank_sample'
+
+======================================================================
+ERROR: test_fair_bits (test_bounded.Tests.test_fair_bits)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-bounded-randomness-20261027/test_bounded.py", line 27, in test_fair_bits
+    self.assertEqual(b.bit_sample((0,0),[('H',0),('H',1)],bit),((1,0),2))
+                     ^^^^^^^^^^^^
+AttributeError: module 'bounded' has no attribute 'bit_sample'
+
+======================================================================
+ERROR: test_hh (test_bounded.Tests.test_hh)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-bounded-randomness-20261027/test_bounded.py", line 14, in test_hh
+    self.assertEqual(b.rank_sample((0,),[('H',0),('H',0)],r),((0,),1))
+                     ^^^^^^^^^^^^^
+AttributeError: module 'bounded' has no attribute 'rank_sample'
+
+======================================================================
+ERROR: test_identity (test_bounded.Tests.test_identity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-bounded-randomness-20261027/test_bounded.py", line 16, in test_identity
+    self.assertEqual(b.rank_sample((1,0),[],0),((1,0),2))
+                     ^^^^^^^^^^^^^
+AttributeError: module 'bounded' has no attribute 'rank_sample'
+
+======================================================================
+FAIL: test_feature_present (test_bounded.Tests.test_feature_present)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-bounded-randomness-20261027/test_bounded.py", line 8, in test_feature_present
+    self.assertTrue(callable(getattr(b,'rank_sample',None)))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.003s
+
+FAILED (failures=1, errors=7)

@@ -1,0 +1,18 @@
+{
+  "groups": {
+    "exhaustive": {
+      "cases": 680,
+      "ranks": 3200,
+      "oracle_calls": 9600,
+      "failed_cases": 0
+    },
+    "seeded": {
+      "cases": 40,
+      "ranks": 348,
+      "oracle_calls": 738,
+      "failed_cases": 0
+    }
+  },
+  "failures": 0,
+  "elapsed_seconds": 0.3493120339990128
+}

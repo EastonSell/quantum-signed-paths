@@ -1,0 +1,13 @@
+test_bad_bit (test_bounded.Tests.test_bad_bit) ... ok
+test_bad_oracle (test_bounded.Tests.test_bad_oracle) ... ok
+test_bad_rank (test_bounded.Tests.test_bad_rank) ... ok
+test_empty (test_bounded.Tests.test_empty) ... ok
+test_fair_bits (test_bounded.Tests.test_fair_bits) ... ok
+test_feature_present (test_bounded.Tests.test_feature_present) ... ok
+test_hh (test_bounded.Tests.test_hh) ... ok
+test_identity (test_bounded.Tests.test_identity) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

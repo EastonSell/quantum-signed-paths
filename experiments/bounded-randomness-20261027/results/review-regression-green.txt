@@ -1,0 +1,18 @@
+test_all_bitstrings_frozen_cases (test_bounded.ReviewRegressionTests.test_all_bitstrings_frozen_cases) ... ok
+test_bit_gate_iterator (test_bounded.ReviewRegressionTests.test_bit_gate_iterator) ... ok
+test_integer_oracle (test_bounded.ReviewRegressionTests.test_integer_oracle) ... ok
+test_rank_gate_iterator (test_bounded.ReviewRegressionTests.test_rank_gate_iterator) ... ok
+test_reject_nonexact_oracles (test_bounded.ReviewRegressionTests.test_reject_nonexact_oracles) ... ok
+test_bad_bit (test_bounded.Tests.test_bad_bit) ... ok
+test_bad_oracle (test_bounded.Tests.test_bad_oracle) ... ok
+test_bad_rank (test_bounded.Tests.test_bad_rank) ... ok
+test_empty (test_bounded.Tests.test_empty) ... ok
+test_fair_bits (test_bounded.Tests.test_fair_bits) ... ok
+test_feature_present (test_bounded.Tests.test_feature_present) ... ok
+test_hh (test_bounded.Tests.test_hh) ... ok
+test_identity (test_bounded.Tests.test_identity) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.544s
+
+OK

@@ -1,0 +1,5 @@
+# Provenance and prior art
+- Parent local audit `quantum-signed-paths-audit/THEORY.md`, conditional corollary: explicitly proposes a fixed h-bit rank sampler but says it is not supplied. This follow-on implements that existing proposal, not a new claim.
+- `base_quantum.py` is an exact byte copy of parent `quantum.py`; SHA256 `bc4da1931e416c893d0c6b17c6bdf84088c8deba30539a8e45b132a721f07e5c`.
+- Wang, Cheng, Yuan, Ji, FeynmanDD: Quantum Circuit Analysis with Classical Decision Diagrams, section 6.1, https://arxiv.org/html/2509.08276v1 (accessed 2026-10-27): conditional probabilities and sequential output-bit sampling are established prior art. We do not claim priority over its sampling approach. Our exact integer rank variant uses ordinary inverse-CDF partitioning, and makes no claim to improve their computational engine.
+- Parent `SOURCES.md` documents a conditional exact-counting corollary. We have not rebuilt or validated that external theorem; no complexity improvement depends on treating it as verified here.
