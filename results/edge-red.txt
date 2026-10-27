@@ -1,0 +1,13 @@
+...F.......
+======================================================================
+FAIL: test_many_untouched_conflicts_one_clause (test_core.EdgeTests.test_many_untouched_conflicts_one_clause)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-signed-paths-audit/tests/test_core.py", line 32, in test_many_untouched_conflicts_one_clause
+    self.assertEqual(c.clauses.count(()),1)
+AssertionError: 100 != 1
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.018s
+
+FAILED (failures=1)

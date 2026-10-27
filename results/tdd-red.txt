@@ -1,0 +1,68 @@
+EEEEEEE
+======================================================================
+ERROR: test_cnf (test_core.Tests.test_cnf)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-signed-paths-audit/tests/test_core.py", line 13, in test_cnf
+    cnf=q.encode((0,), [('H',0),('H',0)], (1,),parity)
+        ^^^^^^^^
+AttributeError: module 'quantum' has no attribute 'encode'
+
+======================================================================
+ERROR: test_identity_and_h (test_core.Tests.test_identity_and_h)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-signed-paths-audit/tests/test_core.py", line 7, in test_identity_and_h
+    self.assertEqual(q.pair_counts((0,), [], (0,)), (1,0,1))
+                     ^^^^^^^^^^^^^
+AttributeError: module 'quantum' has no attribute 'pair_counts'
+
+======================================================================
+ERROR: test_interference (test_core.Tests.test_interference)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-signed-paths-audit/tests/test_core.py", line 10, in test_interference
+    self.assertEqual(q.probability((0,), [('H',0),('H',0)], (1,)),0)
+                     ^^^^^^^^^^^^^
+AttributeError: module 'quantum' has no attribute 'probability'
+
+======================================================================
+ERROR: test_invalid (test_core.Tests.test_invalid)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-signed-paths-audit/tests/test_core.py", line 20, in test_invalid
+    with self.assertRaises(ValueError): q.probability((0,0), [('T',0,0,1)], ())
+                                        ^^^^^^^^^^^^^
+AttributeError: module 'quantum' has no attribute 'probability'
+
+======================================================================
+ERROR: test_sampler (test_core.Tests.test_sampler)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-signed-paths-audit/tests/test_core.py", line 23, in test_sampler
+    self.assertEqual(q.sample((1,), [], random.Random(1)),(1,))
+                     ^^^^^^^^
+AttributeError: module 'quantum' has no attribute 'sample'
+
+======================================================================
+ERROR: test_state_vector (test_core.Tests.test_state_vector)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-signed-paths-audit/tests/test_core.py", line 25, in test_state_vector
+    self.assertEqual(q.state_probabilities((0,), [('H',0),('H',0)]),[Fraction(1),Fraction(0)])
+                     ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'quantum' has no attribute 'state_probabilities'
+
+======================================================================
+ERROR: test_unmeasured (test_core.Tests.test_unmeasured)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-signed-paths-audit/tests/test_core.py", line 18, in test_unmeasured
+    self.assertEqual(q.probability((0,0), [('H',1)], (0,)),1)
+                     ^^^^^^^^^^^^^
+AttributeError: module 'quantum' has no attribute 'probability'
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.004s
+
+FAILED (errors=7)

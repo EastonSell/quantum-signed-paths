@@ -1,0 +1,8 @@
+{
+  "row_count": 12468,
+  "all_counts_probabilities_inputs_and_denominators_identical": true,
+  "clause_count_only_changes": 404,
+  "original_sha256": "8ff087eff18475fcea8148c9ccbde945e34242324b75cdadb6fd71191bf6ce45",
+  "rerun_sha256": "1c4975b53b18ffd5c2c5e415d8f51421b3b5f7dc825a0274911ad2e0e962f297",
+  "initial_full_row_equivalence_assertion": "failed as expected from empty-clause dedup; only clause-count metadata changed"
+}

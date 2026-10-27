@@ -1,0 +1,6 @@
+# SHA-256 of externally fetched pinned upstream files; not bundled here.
+# Paths below are upstream-relative, NOT local files.
+# Fetch prefix: https://raw.githubusercontent.com/openai/math/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/
+a2f7b390d6308997350b903be02c40a1227ebd2b9376982da528574500531f79  lean/docs/378.md
+040360a8465957622d934e5f1bb4f2cce8dab950e78f52033fbf70da493184f5  lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Final.lean
+4183b2057cff350d66848215ff7167196dfc20e1891b598fdddea59077a76685  lean/ComparatorChallenges/SubexponentialSAT.lean

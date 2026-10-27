@@ -1,0 +1,17 @@
+{
+  "circuit": [
+    [
+      "H",
+      1
+    ]
+  ],
+  "input": [
+    0,
+    0
+  ],
+  "prefix": [
+    0
+  ],
+  "correct": "1",
+  "incorrect_prefix_only_matching": 2.0
+}
