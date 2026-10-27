@@ -1,0 +1,12 @@
+{
+  "attempts": 240,
+  "expected_attempts": 240,
+  "cases": 48,
+  "failed_cases": 0,
+  "successful_calls": 240,
+  "python": "3.12.14",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "protocol_sha256": "e535e9bc4304b3400ee23ad6f09ea9bf3a3e1f72202fe59aab1aec7b099e5516",
+  "memory": "tracemalloc Python allocation peak; not RSS; separately measured from elapsed time",
+  "timing": "single untraced run, memory second pass, not a statistical speed claim"
+}

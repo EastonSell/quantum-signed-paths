@@ -1,0 +1,21 @@
+test_grouped_and_design (test_benchmark.BenchmarkTests.test_grouped_and_design) ... ok
+test_control_phase_kickback (test_cone.ConeTests.test_control_phase_kickback) ... ok
+test_exhaustive (test_cone.ConeTests.test_exhaustive) ... ok
+test_implementation_exists (test_cone.ConeTests.test_implementation_exists) ... ok
+test_spectators_empty_invalid (test_cone.ConeTests.test_spectators_empty_invalid) ... ok
+test_cnf_count_against_full_assignment_enumeration (test_core.EdgeTests.test_cnf_count_against_full_assignment_enumeration) ... ok
+test_empty_register (test_core.EdgeTests.test_empty_register) ... ok
+test_gadget_unique_extensions (test_core.EdgeTests.test_gadget_unique_extensions) ... ok
+test_many_untouched_conflicts_one_clause (test_core.EdgeTests.test_many_untouched_conflicts_one_clause) ... ok
+test_cnf (test_core.Tests.test_cnf) ... ok
+test_identity_and_h (test_core.Tests.test_identity_and_h) ... ok
+test_interference (test_core.Tests.test_interference) ... ok
+test_invalid (test_core.Tests.test_invalid) ... ok
+test_sampler (test_core.Tests.test_sampler) ... ok
+test_state_vector (test_core.Tests.test_state_vector) ... ok
+test_unmeasured (test_core.Tests.test_unmeasured) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.617s
+
+OK

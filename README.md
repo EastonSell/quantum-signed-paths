@@ -38,3 +38,21 @@ No Lean build was run here. [Results](results/summary.json),
 
 No dependency downloads, credentials, network access, or quantum hardware are
 needed to reproduce this project. Publication is handled separately after review.
+
+## Reviewed causal-cone follow-on (2026-10-27)
+
+[Experiment and reproduction instructions](experiments/causal-cone-20261027/README.md)
+apply established backward-lightcone pruning to query-local probabilities.
+All 48 queries agree across five methods (240 method-case pairs); 16 tests,
+2,550 exhaustive comparisons and 300 independent random cases pass. Spectator
+local-prefix cases enumerate 4 rather than 256 paths; full-output controls
+show no pruning. These small single-run timings do not establish a universal
+speedup or implement the external counting theorem.
+
+The experiment directory is the exact reviewed local artifact, including its
+manifest, frozen protocol, original failures and independent review. Statements
+inside that snapshot saying “Not published” or “no push” describe its original
+local preparation; this integration publishes it after review. Protocol freezing
+was local and is not externally timestamped preregistration. Original root
+protocol, code and evidence are retained unchanged; run the follow-on from its
+own directory to use its appended `cone` implementation.

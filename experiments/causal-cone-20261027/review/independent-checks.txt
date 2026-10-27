@@ -1,0 +1,2 @@
+Independent longer/random cases: 300
+All 240 rows match exactly excluding timings and memory

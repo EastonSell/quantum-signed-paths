@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/EastonSell/quantum-signed-paths",
+  "commit": "8b717e811b202f52e2743fcc0d2ef16ad2e28def",
+  "verified_remote": "GitHub branches API on 2026-10-27",
+  "base_quantum_py_sha256": "bc4da1931e416c893d0c6b17c6bdf84088c8deba30539a8e45b132a721f07e5c",
+  "base_implementation_preserved_as_exact_prefix": true,
+  "new_implementation": "cone function appended only"
+}

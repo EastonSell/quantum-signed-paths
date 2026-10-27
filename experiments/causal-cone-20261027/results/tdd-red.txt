@@ -1,0 +1,52 @@
+test_control_phase_kickback (test_cone.ConeTests.test_control_phase_kickback) ... FAIL
+test_exhaustive (test_cone.ConeTests.test_exhaustive) ... FAIL
+test_implementation_exists (test_cone.ConeTests.test_implementation_exists) ... FAIL
+test_spectators_empty_invalid (test_cone.ConeTests.test_spectators_empty_invalid) ... FAIL
+test_cnf_count_against_full_assignment_enumeration (test_core.EdgeTests.test_cnf_count_against_full_assignment_enumeration) ... ok
+test_empty_register (test_core.EdgeTests.test_empty_register) ... ok
+test_gadget_unique_extensions (test_core.EdgeTests.test_gadget_unique_extensions) ... ok
+test_many_untouched_conflicts_one_clause (test_core.EdgeTests.test_many_untouched_conflicts_one_clause) ... ok
+test_cnf (test_core.Tests.test_cnf) ... ok
+test_identity_and_h (test_core.Tests.test_identity_and_h) ... ok
+test_interference (test_core.Tests.test_interference) ... ok
+test_invalid (test_core.Tests.test_invalid) ... ok
+test_sampler (test_core.Tests.test_sampler) ... ok
+test_state_vector (test_core.Tests.test_state_vector) ... ok
+test_unmeasured (test_core.Tests.test_unmeasured) ... ok
+
+======================================================================
+FAIL: test_control_phase_kickback (test_cone.ConeTests.test_control_phase_kickback)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-cone-results-20261027/tests/test_cone.py", line 30, in test_control_phase_kickback
+    self.assertTrue(callable(getattr(quantum, 'cone', None)), 'missing cone implementation')
+AssertionError: False is not true : missing cone implementation
+
+======================================================================
+FAIL: test_exhaustive (test_cone.ConeTests.test_exhaustive)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-cone-results-20261027/tests/test_cone.py", line 9, in test_exhaustive
+    self.assertTrue(callable(getattr(quantum, 'cone', None)), 'missing cone implementation')
+AssertionError: False is not true : missing cone implementation
+
+======================================================================
+FAIL: test_implementation_exists (test_cone.ConeTests.test_implementation_exists)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-cone-results-20261027/tests/test_cone.py", line 7, in test_implementation_exists
+    self.assertTrue(callable(getattr(quantum, 'cone', None)), 'missing cone implementation')
+AssertionError: False is not true : missing cone implementation
+
+======================================================================
+FAIL: test_spectators_empty_invalid (test_cone.ConeTests.test_spectators_empty_invalid)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/fb1c54ed82f9/quantum-cone-results-20261027/tests/test_cone.py", line 25, in test_spectators_empty_invalid
+    self.assertTrue(callable(getattr(quantum, 'cone', None)), 'missing cone implementation')
+AssertionError: False is not true : missing cone implementation
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.010s
+
+FAILED (failures=4)

@@ -1,0 +1,338 @@
+[
+  {
+    "case_id": 0,
+    "full_gap": 128,
+    "cone_gap": 2,
+    "factor": 64,
+    "passed": true
+  },
+  {
+    "case_id": 1,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 2,
+    "full_gap": 192,
+    "cone_gap": 192,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 3,
+    "full_gap": 16,
+    "cone_gap": 16,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 4,
+    "full_gap": 128,
+    "cone_gap": 2,
+    "factor": 64,
+    "passed": true
+  },
+  {
+    "case_id": 5,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 6,
+    "full_gap": 256,
+    "cone_gap": 256,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 7,
+    "full_gap": 64,
+    "cone_gap": 64,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 8,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 64,
+    "passed": true
+  },
+  {
+    "case_id": 9,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 10,
+    "full_gap": 192,
+    "cone_gap": 192,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 11,
+    "full_gap": 16,
+    "cone_gap": 16,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 12,
+    "full_gap": 256,
+    "cone_gap": 4,
+    "factor": 64,
+    "passed": true
+  },
+  {
+    "case_id": 13,
+    "full_gap": 256,
+    "cone_gap": 256,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 14,
+    "full_gap": 256,
+    "cone_gap": 256,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 15,
+    "full_gap": 256,
+    "cone_gap": 256,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 16,
+    "full_gap": 128,
+    "cone_gap": 2,
+    "factor": 64,
+    "passed": true
+  },
+  {
+    "case_id": 17,
+    "full_gap": 16,
+    "cone_gap": 16,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 18,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 19,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 20,
+    "full_gap": 128,
+    "cone_gap": 2,
+    "factor": 64,
+    "passed": true
+  },
+  {
+    "case_id": 21,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 22,
+    "full_gap": 128,
+    "cone_gap": 128,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 23,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 24,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 64,
+    "passed": true
+  },
+  {
+    "case_id": 25,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 26,
+    "full_gap": 128,
+    "cone_gap": 128,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 27,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 28,
+    "full_gap": 256,
+    "cone_gap": 4,
+    "factor": 64,
+    "passed": true
+  },
+  {
+    "case_id": 29,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 30,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 31,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 32,
+    "full_gap": 256,
+    "cone_gap": 4,
+    "factor": 64,
+    "passed": true
+  },
+  {
+    "case_id": 33,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 34,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 16,
+    "passed": true
+  },
+  {
+    "case_id": 35,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 36,
+    "full_gap": 256,
+    "cone_gap": 4,
+    "factor": 64,
+    "passed": true
+  },
+  {
+    "case_id": 37,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 38,
+    "full_gap": 256,
+    "cone_gap": 32,
+    "factor": 8,
+    "passed": true
+  },
+  {
+    "case_id": 39,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 40,
+    "full_gap": 128,
+    "cone_gap": 2,
+    "factor": 64,
+    "passed": true
+  },
+  {
+    "case_id": 41,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 42,
+    "full_gap": 64,
+    "cone_gap": 1,
+    "factor": 64,
+    "passed": true
+  },
+  {
+    "case_id": 43,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 44,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 64,
+    "passed": true
+  },
+  {
+    "case_id": 45,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 1,
+    "passed": true
+  },
+  {
+    "case_id": 46,
+    "full_gap": 128,
+    "cone_gap": 64,
+    "factor": 2,
+    "passed": true
+  },
+  {
+    "case_id": 47,
+    "full_gap": 0,
+    "cone_gap": 0,
+    "factor": 1,
+    "passed": true
+  }
+]
